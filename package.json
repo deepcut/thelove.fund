@@ -1,0 +1,30 @@
+{
+  "name": "thelove.fund",
+  "version": "1.0.0",
+  "description": "https://thelove.fund",
+  "main": "brunch-config.js",
+  "scripts": {
+    "start": "brunch watch --server",
+    "prod": "brunch build --production"
+  },
+  "keywords": [
+    "The",
+    "Love",
+    "Fund"
+  ],
+  "author": "Feifan Wang",
+  "license": "MIT",
+  "devDependencies": {
+    "auto-reload-brunch": "^2.7.1",
+    "autoprefixer": "^6.7.0",
+    "babel-brunch": "^6.0.6",
+    "babel-preset-es2015": "^6.22.0",
+    "brunch": "^2.10.5",
+    "clean-css-brunch": "^2.0.0",
+    "css-brunch": "^2.6.1",
+    "javascript-brunch": "^2.0.0",
+    "postcss-brunch": "^2.0.5",
+    "sass-brunch": "^2.9.0",
+    "uglify-js-brunch": "^2.0.1"
+  }
+}
