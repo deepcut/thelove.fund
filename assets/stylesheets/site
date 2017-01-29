@@ -11,7 +11,8 @@ Error: File to import not found or unreadable: foundation.
 8: // // @import helpers
 9: @include foundation-everything;
 10: 
-11: @import 'screens/all';
+11: @import 'mixins';
+12: @import 'screens/all';
 
 Backtrace:
 /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss:7
@@ -129,4 +130,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: foundation.\A         on line 7 of /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss\A \A 2: // // @import bourbon\A 3: \A 4: // // @import colors\A 5: // // @import sizes\A 6: // // @import foundation-settings\A 7: @import 'foundation';\A 8: // // @import helpers\A 9: @include foundation-everything;\A 10: \A 11: @import 'screens/all';"; }
+  content: "Error: File to import not found or unreadable: foundation.\A         on line 7 of /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss\A \A 2: // // @import bourbon\A 3: \A 4: // // @import colors\A 5: // // @import sizes\A 6: // // @import foundation-settings\A 7: @import 'foundation';\A 8: // // @import helpers\A 9: @include foundation-everything;\A 10: \A 11: @import 'mixins';\A 12: @import 'screens/all';"; }
