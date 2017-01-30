@@ -2,7 +2,14 @@ header.hero
   .site-logo
   .row
     .medium-8.small-9.small-centered.columns
-      h1.headline = data.index.hero.headline
+      h1.headline
+        .typed-words
+          - data.index.hero.headline.typed_words.each do |word|
+            p = word
+        div = data.index.hero.headline.line1
+        div
+          span.typed
+        div = data.index.hero.headline.line3
       h2.sub-headline = data.index.hero.sub_headline
 
 .second-panel.row.panel

@@ -1,5 +1,14 @@
 hero:
-  headline: "Organizations fighting trump need your help"
+  headline:
+    line1: 'Organizations fighting'
+    line3: 'need your help'
+    typed_words:
+    - hatred
+    - bigotry
+    - misinformation
+    - intolerance
+    - xenophobia
+    - Trump
   sub_headline: "Set an amount you'd like to donate every month, and we will donate to 10 awesome non-profits on your behalf."
 second_panel:
   headline: "What's Love Fund?"
