@@ -1,0 +1,9 @@
+.org-cards.row.medium-up-4.small-up-1
+  - data.orgs.each do |org|
+    .column.column-block
+      .org-card
+        a href=org.url target='_blank'
+          .logo-wrapper
+            img.logo src=org.logo alt=org.logo_alt
+          .name = org.name
+        .desc = org.desc

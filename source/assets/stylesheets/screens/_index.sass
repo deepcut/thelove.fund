@@ -1,8 +1,40 @@
 .index
   .hero
-    background: url(/assets/images/hero-image.jpg) bottom center
-    background-size: cover
-    background-position: center
-    padding-top: 180px
-    padding-bottom: 250px
+    +bg-image('/assets/images/hero-image.jpg')
+    padding-top: 12rem
+    padding-bottom: 16rem
+    +breakpoint(small only)
+      padding-top: 12rem
+      padding-bottom: 12rem
     color: white
+    .headline
+      text-transform: uppercase
+    .sub-headline
+      font-size: 1.5rem
+      +breakpoint(small only)
+        font-size: 1.2rem
+  .second-panel
+    margin-top: 3rem
+    .donation-box
+      margin-top: 3.5rem
+  .oliver-panel
+    .video-container
+      background: black
+    .blockquote
+      font-weight: bold
+      cite
+        color: black
+        margin-top: 0.5rem
+        font-weight: normal
+  .orgs-panel
+    .org-cards
+      margin-bottom: 3rem
+
+footer.footer
+  background: $light-gray
+  color: $gray
+  margin-top: 6rem
+  padding-top: 8rem
+  padding-bottom: 8rem
+  .footer-content
+    margin: 0

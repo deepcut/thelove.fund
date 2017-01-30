@@ -1,9 +1,37 @@
----
-title: The Love Fund
----
-
 header.hero
+  .site-logo
   .row
-    .logo The Love Fund
-    h1 HEADLINE GOES HERE LOREM IPSUM DOLOR ES DE
-    h2 SUBTEXT GOES HERE EXPLAINING HEADLINE AND MISSION
+    .medium-8.small-9.small-centered.columns
+      h1.headline = data.index.hero.headline
+      h2.sub-headline = data.index.hero.sub_headline
+
+.second-panel.row.panel
+  .medium-8.small-9.small-centered.columns
+    h3.headline = data.index.second_panel.headline
+    p = data.index.second_panel.desc
+    = partial 'components/donation_box'
+
+.oliver-panel.row.expanded.panel
+  .medium-8.small-11.small-centered.columns
+    h3.headline = data.index.oliver_panel.headline
+  .video-container.small-collapse
+    .medium-6.small-12.small-centered.columns
+      .responsive-embed.widescreen
+        iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-rSDUsMwakI?rel=0&amp;controls=0&amp;showinfo=0&start=1168&end=1341" frameborder="0"
+  .medium-6.small-11.small-centered.columns
+    .blockquote.center-elements
+      = data.index.oliver_panel.quote
+      cite John Oliver
+
+.orgs-panel.panel.row
+  .medium-8.small-11.small-centered.columns
+    h3.headline = data.index.orgs_panel.headline
+  .small-10.small-centered.columns
+    = partial 'components/org_cards'
+
+  .medium-8.small-11.small-centered.columns
+    = partial 'components/donation_box'
+
+footer.footer.row.expanded.center-elements
+  .small-6.small-centered.columns
+    .footer-content Powered by DANG

@@ -1,0 +1,15 @@
+hero:
+  headline: "Organizations fighting trump need your help"
+  sub_headline: "Set an amount you'd like to donate every month, and we will donate to 10 awesome non-profits on your behalf."
+second_panel:
+  headline: "What's Love Fund?"
+  desc: "The Love Fund non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius."
+oliver_panel:
+  headline: "Not convinced? Listen to John Oliver"
+  quote: "“If you can afford the time and or money, support organizations that are going to need help under the Trump administration”"
+orgs_panel:
+  headline: "Organizations your money will go to"
+donation_box:
+  title: 'How much would you like to pledge?'
+  caveat: "This is just a pledge for now, we'll let you know once we launch and ready to accept donations."
+  cta: Pledge

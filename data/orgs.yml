@@ -1,0 +1,48 @@
+- name: American Civil Liberties Union (ACLU)
+  desc: The American Civil Liberties Union (ACLU) is a national organization that works daily in courts, legislatures and communities to defend the individual rights and liberties guaranteed by the Constitution and laws of the United States.
+  url: https://www.aclu.org/
+  logo: 'assets/images/org-logos/aclu.png'
+  logo_alt: ACLU Logo
+- name: Planned Parenthood
+  desc: Planned Parenthood is one of the nation's leading providers of high-quality, affordable health care for women, men, and young people, and the nation's largest provider of sex education. It also works with partner organizations to improve the sexual health and well-being of individuals and families everywhere.
+  url: https://www.plannedparenthood.org/
+  logo: 'assets/images/org-logos/planned-parenthood.png'
+  logo_alt: Planned Parenthood Logo
+- name: Natural Resources Defense Council
+  desc: The Natural Resources Defense Council works to safeguard the earth - its people, its plants and animals, and the natural systems on which all life depends.
+  url: https://www.nrdc.org/
+  logo: 'assets/images/org-logos/nrdc.png'
+  logo_alt: 'Natural Resources Defense Council Logo'
+- name: The International Refugee Assistance Project (IRAP)
+  desc: The International Refugee Assistance Project (IRAP) organizes law students and lawyers to develop and enforce a set of legal and human rights for refugees and displaced persons.
+  url: https://refugeerights.org/
+  logo: 'assets/images/org-logos/irap.png'
+- name: NAACP Legal Defense Fund (LDF)
+  desc: LDF seeks structural changes to expand democracy, eliminate disparities, and achieve racial justice in a society that fulfills the promise of equality for all Americans.
+  url: http://www.naacpldf.org/
+  logo: 'assets/images/org-logos/ldf.png'
+  logo_alt: NAACP Legal Defense Fund Logo
+- name: The Trevor Project
+  desc: The Trevor Project saves young lives through its free and confidential Lifeline, in-school workshops, educational materials, online resources, and advocacy.
+  url: http://www.thetrevorproject.org/
+  logo: 'assets/images/org-logos/the-trevor-project.jpg'
+  logo_alt: The Trevor Project Logo
+- name: Mexican American Legal Defense and Educational Fund (MALDEF)
+  desc: MALDEF is a national nonprofit organization whose principal objective is to protect and promote the civil rights of the more than 27 million Latinos living in the United States.
+  url: http://www.maldef.org/
+  logo: 'assets/images/org-logos/maldef.png'
+  logo_alt: Mexican American Legal Defense and Educational Fund (MALDEF) Logo
+- name: Pro Publica
+  desc: ProPublica is an independent, non-profit newsroom that produces investigative journalism in the public interest. In 2010 it became the first online news source to win a Pulitzer Prize.
+  url: https://www.propublica.org/
+  logo: 'assets/images/org-logos/pro-publica.jpg'
+- name: National Immigration Law Center (NILC)
+  desc: National Immigration Law Center’s mission is to defend and advance the rights and opportunities of low-income immigrants and their family members.
+  url: https://www.nilc.org/
+  logo: 'assets/images/org-logos/nilc.png'
+  logo_alt: National Immigration Law Center (NILC) Logo
+- name: Council on American-Islamic Relations (CAIR)
+  desc: CAIR is a Muslim civil rights and advocacy group. Through media relations, civic engagement, and education, CAIR promotes Islamic perspectives to the American public and promotes social and political activism among Muslims in America.
+  url: https://www.cair.com/
+  logo: 'assets/images/org-logos/cair.png'
+  logo_alt: Council on American-Islamic Relations (CAIR) Logo

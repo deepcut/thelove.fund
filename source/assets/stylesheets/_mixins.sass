@@ -1,0 +1,11 @@
+@mixin center-elements
+  text-align: center
+
+.center-elements
+  +center-elements
+
+@mixin bg-image($url, $size: cover)
+  background: url($url)
+  background-repeat: no-repeat
+  background-size: $size
+  background-position: center

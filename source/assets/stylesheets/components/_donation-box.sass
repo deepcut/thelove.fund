@@ -1,0 +1,18 @@
+.donation-box
+  .title, .cta
+    text-transform: uppercase
+  .title
+    font-size: 1rem
+  .caveat
+    font-size: 0.75rem
+    font-style: italic
+  .amounts.button-group
+    margin-top: 1rem
+    &.stacked-small
+      +breakpoint(small only)
+        .button
+          width: 100% !important
+          margin-right: 0 !important
+  +breakpoint(small only)
+    .cta.button
+      width: 100%
