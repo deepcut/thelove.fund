@@ -1,26 +1,29 @@
 /*
-Error: File to import not found or unreadable: foundation.
-        on line 7 of /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss
-
-2: // // @import bourbon
-3: 
-4: // // @import colors
-5: // // @import sizes
-6: @import 'foundation-settings';
-7: @import 'foundation';
-8: // // @import helpers
-9: 
-10: @include foundation-everything;
-11: 
-12: @import 'mixins';
+Error: File to import not found or unreadable: util/util.
+        on line 44 of /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/_foundation-settings.scss
+        from line 6 of /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss
 
 Backtrace:
-/Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss:7
+/Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/_foundation-settings.scss:44
+/Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss:6
 /Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
 /Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
 /Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
 /Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+/Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
 /Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/feifan/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -130,4 +133,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: foundation.\A         on line 7 of /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss\A \A 2: // // @import bourbon\A 3: \A 4: // // @import colors\A 5: // // @import sizes\A 6: @import 'foundation-settings';\A 7: @import 'foundation';\A 8: // // @import helpers\A 9: \A 10: @include foundation-everything;\A 11: \A 12: @import 'mixins';"; }
+  content: "Error: File to import not found or unreadable: util/util.\A         on line 44 of /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/_foundation-settings.scss\A         from line 6 of /Users/feifan/Documents/Projects/love_fund/source/assets/stylesheets/site.scss"; }
