@@ -8,7 +8,7 @@ $(document).ready(() => {
     backSpeed: 10,
     // time before backspacing
     backDelay: 1500,
-    cursorChar: '_',
+    cursorChar: '|',
     // loop: true,
     // callback: () => {
     //   window.setTimeout(() => {
