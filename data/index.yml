@@ -11,5 +11,5 @@ orgs_panel:
   headline: "Organizations your money will go to"
 donation_box:
   title: 'How much would you like to pledge?'
-  caveat: "This is just a pledge for now, we'll let you know once we launch and ready to accept donations."
+  caveat: "It's just a pledge for now, we'll let you know once we launch and ready to accept donations."
   cta: Pledge
