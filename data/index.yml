@@ -8,6 +8,7 @@ hero:
     - tolerance
     - facts
     - equality
+    - the environment
     - human rights
     - love
   sub_headline: "Set an amount you'd like to donate each month, and we will donate it to 10 awesome non-profits on your behalf."
@@ -16,7 +17,7 @@ second_panel:
   desc: "The Love Fund non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius."
 oliver_panel:
   headline: "Not convinced? Listen to John Oliver"
-  quote: "“If you can afford the time and or money, support organizations that are going to need help under the Trump administration”"
+  quote: "“If you can afford the time or money, support organizations that are going to need help under the Trump administration”"
 orgs_panel:
   headline: "Organizations your money will go to"
 donation_box:
