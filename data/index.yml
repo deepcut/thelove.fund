@@ -13,14 +13,14 @@ hero:
     - love
   sub_headline: "Set an amount you'd like to donate each month, and we will donate it to 10 awesome non-profits on your behalf."
 second_panel:
-  headline: "What's Love Fund?"
-  desc: "The Love Fund non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius."
+  headline: "What’s Love Fund?"
+  desc: "<em>Love Fund</em> helps you easily make recurring donations to a number of high-impact organizations that are fighting against the initiatives of the Trump Administration. These organizations were carefully selected to represent the myriad of issues under siege, such as climate change, human rights, and religious tolerance. Many of these organizations have been cited and written about by the <a href='https://www.nytimes.com/2016/11/18/us/politics/nonprofit-donations-trump.html' target='_blank'>New York Times</a>, <a href='http://www.theatlantic.com/business/archive/2016/11/donald-trump-donations/507668/' target='_blank'>The Atlantic</a>, and the <a href='https://www.washingtonpost.com/news/inspired-life/wp/2016/11/30/its-unprecedented-in-our-history-after-trumps-election-millions-of-dollars-poured-into-nonprofits/' target='_blank'>Washington Post</a>."
 oliver_panel:
   headline: "Not convinced? Listen to John Oliver"
   quote: "“If you can afford the time or money, support organizations that are going to need help under the Trump administration”"
 orgs_panel:
   headline: "Organizations your money will go to"
 donation_box:
-  title: 'How much would you like to pledge?'
+  title: 'Convinced? Make a pledge to donate'
   caveat: "It's just a pledge for now, we'll let you know once we launch and ready to accept donations."
   cta: Pledge
