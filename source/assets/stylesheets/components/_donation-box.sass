@@ -25,3 +25,17 @@
     width: 45%
     +breakpoint(small only)
       width: 100%
+  .custom-amount
+    position: relative
+    &:before
+      left: 46%
+      position: absolute
+      top: 20%
+      content: "$"
+      font-size: 1rem
+      +breakpoint(small only)
+        left: 42.5%
+    input
+      padding-left: 47.3%
+      +breakpoint(small only)
+        padding-left: 46.5%

@@ -26,37 +26,45 @@ const AmountBtn = ({ amount, onClick, isActive }) => (
   </button>
 )
 
+const CustomAmtInput = ({ onChange, value }) => (
+  <div className='custom-amount expanded'>
+    <input onChange={onChange} value={value} placeholder='40' type='number' min='0' />
+  </div>
+)
+
 class DonationBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedAmount: null
+      amounts: [ 10, 20, 50, 100 ],
+      amount: null,
+      showCustom: false
     };
-    this.onAmountSelect = this.onAmountSelect.bind(this)
+    this.onAmountSelect = (amount) => ( this.setState({amount: amount}) )
+    this.onCustomAmtChange = (evt) => (
+      this.setState({amount: parseInt(evt.target.value)})
+    )
+    this.isActive = (amount) => ( amount === this.state.amount )
+    this.showCustom = () => ( this.setState({showCustom: true}) )
     this.onPledgeClick = this.onPledgeClick.bind(this)
-    this.isActive = this.isActive.bind(this)
-  }
-  onAmountSelect(amount) {
-    this.setState({selectedAmount: amount})
   }
   onPledgeClick() {
-    console.log("Pledged: ", this.state.selectedAmount)
-  }
-  isActive(amount) {
-    return amount === this.state.selectedAmount
+    console.log("Pledged: ", this.state.amount)
   }
   render() {
     return (
       <div>
         <div className='amounts button-group expanded stacked-small'>
-          {this.props.amounts.map(amt =>
+          {this.state.amounts.map(amt =>
             <AmountBtn
               key={`amt-${amt}`}
               isActive={this.isActive(amt)}
               amount={amt}
               onClick={this.onAmountSelect.bind(this, amt)}/>
           )}
+          { !this.state.showCustom && <button className='button secondary' onClick={this.showCustom}>CUSTOM</button> }
         </div>
+        { this.state.showCustom && <CustomAmtInput onChange={this.onCustomAmtChange} value={this.state.amount} /> }
         <div className='center-elements'>
           <button className='button large cta' onClick={this.onPledgeClick}>Pledge</button>
         </div>
@@ -69,3 +77,4 @@ ReactDOM.render(
   <DonationBox />,
   document.getElementById('donation-box')
 );
+
