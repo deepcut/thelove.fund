@@ -78,8 +78,8 @@ class DonationBox extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <DonationBox />,
-  document.getElementById('donation-box')
-);
+const donationBoxElems = document.getElementsByClassName('donation-box')
+for (var i = 0; i < donationBoxElems.length; i++) {
+  ReactDOM.render(<DonationBox />, donationBoxElems[i])
+}
 
