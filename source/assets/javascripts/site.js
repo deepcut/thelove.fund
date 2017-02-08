@@ -41,15 +41,18 @@ class DonationBox extends React.Component {
       showCustom: false
     };
     this.onAmountSelect = (amount) => ( this.setState({amount: amount}) )
-    this.onCustomAmtChange = (evt) => (
-      this.setState({amount: parseInt(evt.target.value)})
-    )
+    this.onCustomAmtChange = (evt) => ( this.setState({amount: parseInt(evt.target.value)}) )
     this.isActive = (amount) => ( amount === this.state.amount )
     this.showCustom = () => ( this.setState({showCustom: true}) )
     this.onPledgeClick = this.onPledgeClick.bind(this)
   }
   onPledgeClick() {
-    console.log("Pledged: ", this.state.amount)
+    const amt = parseInt(this.state.amount)
+    if(amt && amt > 5) {
+      alert(`yay! pledged: ${amt}`)
+    } else {
+      alert(`nahhhhh. pledged: ${amt}`)
+    }
   }
   render() {
     return (
@@ -62,9 +65,11 @@ class DonationBox extends React.Component {
               amount={amt}
               onClick={this.onAmountSelect.bind(this, amt)}/>
           )}
-          { !this.state.showCustom && <button className='button secondary' onClick={this.showCustom}>CUSTOM</button> }
+          { !this.state.showCustom &&
+            <button className='button secondary' onClick={this.showCustom}>CUSTOM</button> }
         </div>
-        { this.state.showCustom && <CustomAmtInput onChange={this.onCustomAmtChange} value={this.state.amount} /> }
+        { this.state.showCustom &&
+          <CustomAmtInput onChange={this.onCustomAmtChange} value={this.state.amount} /> }
         <div className='center-elements'>
           <button className='button large cta' onClick={this.onPledgeClick}>Pledge</button>
         </div>
