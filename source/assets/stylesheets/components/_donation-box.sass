@@ -1,4 +1,5 @@
 .donation-box
+  $btn-border-width: 2px
   .title, .cta
     text-transform: uppercase
   .title
@@ -14,6 +15,12 @@
         .button
           width: 100% !important
           margin-right: 0 !important
+  .amounts .button
+    border: $btn-border-width solid transparent
+    &.active
+      border: $btn-border-width solid $blue
+      color: $blue
+      font-weight: bold
   .cta.button
     width: 45%
     +breakpoint(small only)
