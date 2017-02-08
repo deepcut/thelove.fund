@@ -38,6 +38,7 @@ class DonationBox extends React.Component {
     super(props);
     this.state = {
       amounts: [ 10, 20, 50, 100 ],
+      minAmount: 5,
       amount: null,
       showCustom: false
     };
@@ -49,10 +50,10 @@ class DonationBox extends React.Component {
   }
   onPledgeClick() {
     const amt = parseInt(this.state.amount)
-    if(amt && amt > 5) {
-      alert(`yay! pledged: ${amt}`)
+    if(amt && amt > this.state.minAmount) {
+      alert(`yay! pledged: ${amt}. At least: ${this.state.minAmount}`)
     } else {
-      alert(`nahhhhh. pledged: ${amt}`)
+      alert(`nahhhhh. pledged: ${amt}.  At least: ${this.state.minAmount}`)
     }
   }
   render() {
