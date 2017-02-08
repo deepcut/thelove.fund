@@ -9,6 +9,7 @@
     font-style: italic
   .amounts.button-group
     margin-top: 1rem
+    margin-bottom: 0
     &.stacked-small
       +breakpoint(small only)
         margin-right: 0
@@ -21,21 +22,15 @@
       border: $btn-border-width solid $blue
       color: $blue
       font-weight: bold
+    +breakpoint(medium only)
+      font-size: 0.75rem
   .cta.button
     width: 45%
+    margin-top: 0.5rem
+    +breakpoint(medium only)
+      font-size: 1.1rem
     +breakpoint(small only)
       width: 100%
-  .custom-amount
-    position: relative
-    &:before
-      left: 46%
-      position: absolute
-      top: 20%
-      content: "$"
-      font-size: 1rem
-      +breakpoint(small only)
-        left: 42.5%
-    input
-      padding-left: 47.3%
-      +breakpoint(small only)
-        padding-left: 46.5%
+  .input-group-label
+    background-color: $secondary-color
+

@@ -27,8 +27,9 @@ const AmountBtn = ({ amount, onClick, isActive }) => (
 )
 
 const CustomAmtInput = ({ onChange, value }) => (
-  <div className='custom-amount expanded'>
-    <input onChange={onChange} value={value} placeholder='40' type='number' min='0' />
+  <div className="custom-amount expanded input-group">
+    <span className="input-group-label">$</span>
+    <input className="input-group-field" onChange={onChange} value={value} placeholder='40' type='number' min='0' />
   </div>
 )
 
