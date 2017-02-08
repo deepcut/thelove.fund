@@ -1,4 +1,5 @@
-.donation-box
+.donation-box-wrapper
+  $btn-border-width: 2px
   .title, .cta
     text-transform: uppercase
   .title
@@ -8,13 +9,28 @@
     font-style: italic
   .amounts.button-group
     margin-top: 1rem
+    margin-bottom: 0
     &.stacked-small
       +breakpoint(small only)
         margin-right: 0
         .button
           width: 100% !important
           margin-right: 0 !important
+  .amounts .button
+    border: $btn-border-width solid transparent
+    &.active
+      border: $btn-border-width solid $blue
+      color: $blue
+      font-weight: bold
+    +breakpoint(medium only)
+      font-size: 0.75rem
   .cta.button
     width: 45%
+    margin-top: 0.5rem
+    +breakpoint(medium only)
+      font-size: 1.1rem
     +breakpoint(small only)
       width: 100%
+  .input-group-label
+    background-color: $secondary-color
+
