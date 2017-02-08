@@ -18,13 +18,50 @@ $(document).ready(() => {
   });
 });
 
+const AmountBtn = ({ amount, onClick, isActive }) => (
+  <button
+    onClick={onClick}
+    className={`button secondary ${isActive ? 'active' : ''}`}>
+    ${amount}
+  </button>
+)
 
 class DonationBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedAmount: null
+    };
+    this.onAmountSelect = this.onAmountSelect.bind(this)
+    this.onPledgeClick = this.onPledgeClick.bind(this)
+    this.isActive = this.isActive.bind(this)
+  }
+  onAmountSelect(amount) {
+    this.setState({selectedAmount: amount})
+  }
+  onPledgeClick() {
+    console.log("Pledged: ", this.state.selectedAmount)
+  }
+  isActive(amount) {
+    return amount === this.state.selectedAmount
+  }
   render() {
     return (
-      <div className='donation-box'>
+      <div>
+        <div className='amounts button-group expanded stacked-small'>
+          {this.props.amounts.map(amt =>
+            <AmountBtn
+              key={`amt-${amt}`}
+              isActive={this.isActive(amt)}
+              amount={amt}
+              onClick={this.onAmountSelect.bind(this, amt)}/>
+          )}
+        </div>
+        <div className='center-elements'>
+          <button className='button large cta' onClick={this.onPledgeClick}>Pledge</button>
+        </div>
       </div>
-    );
+    )
   }
 }
 
