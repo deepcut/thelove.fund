@@ -18,3 +18,17 @@ $(document).ready(() => {
   });
 });
 
+
+class DonationBox extends React.Component {
+  render() {
+    return (
+      <div className='donation-box'>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <DonationBox />,
+  document.getElementById('donation-box')
+);
