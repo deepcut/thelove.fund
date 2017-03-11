@@ -1,37 +1,12 @@
-$(document).ready(() => {
-  $(".typed").typed({
-    stringsElement: $('.typed-words'),
-    typeSpeed: 85,
-    // time before typing starts
-    startDelay: 60,
-    // backspacing speed
-    backSpeed: 10,
-    // time before backspacing
-    backDelay: 1500,
-    cursorChar: '|',
-    // loop: true,
-    // callback: () => {
-    //   window.setTimeout(() => {
-    //     $('.typed-cursor').hide();
-    //   }, 1000);
-    // }
-  });
-});
+import React from 'react'
+import AmountBtn from './AmountBtn'
+import CustomAmtInput from './CustomAmtInput'
 
-const AmountBtn = ({ amount, onClick, isActive }) => (
-  <button
-    onClick={onClick}
-    className={`button secondary ${isActive ? 'active' : ''}`}>
-    ${amount}
-  </button>
-)
-
-const CustomAmtInput = ({ onChange, value }) => (
-  <div className="custom-amount expanded input-group">
-    <span className="input-group-label">$</span>
-    <input className="input-group-field" onChange={onChange} value={value} placeholder='40' type='number' min='0' />
-  </div>
-)
+const openModal = (pledgedAmt) => {
+  $('#email-modal').foundation('open')
+  $('#email-modal .amount').text('$' + pledgedAmt)
+  $('#email-modal input.amount').val(pledgedAmt)
+}
 
 class DonationBox extends React.Component {
   constructor(props) {
@@ -51,7 +26,8 @@ class DonationBox extends React.Component {
   onPledgeClick() {
     const amt = parseInt(this.state.amount)
     if(amt && amt > this.state.minAmount) {
-      alert(`yay! pledged: ${amt}. At least: ${this.state.minAmount}`)
+      console.log(`yay! pledged: ${amt}. At least: ${this.state.minAmount}`)
+      openModal(amt)
     } else {
       alert(`nahhhhh. pledged: ${amt}.  At least: ${this.state.minAmount}`)
     }
@@ -74,14 +50,13 @@ class DonationBox extends React.Component {
           <CustomAmtInput onChange={this.onCustomAmtChange} value={this.state.amount} /> }
         <div className='center-elements'>
           <button className='button large cta' onClick={this.onPledgeClick}>Pledge</button>
+          <br />
+          <a className='typeform-share contribute-other link' href="https://fei3.typeform.com/to/abmmSi" data-mode="1" target="_blank">Contribute in other ways</a>
         </div>
       </div>
     )
   }
 }
 
-const donationBoxElems = document.getElementsByClassName('donation-box')
-for (var i = 0; i < donationBoxElems.length; i++) {
-  ReactDOM.render(<DonationBox />, donationBoxElems[i])
-}
+export default DonationBox
 

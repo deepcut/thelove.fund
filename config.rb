@@ -24,12 +24,15 @@ configure :development do
 end
 
 ignore "*.sass"
+ignore "*.scss"
 
 activate :external_pipeline,
-  name: :brunch,
-  command: build? ? 'npm run prod' : 'npm start',
-  source: "./public",
-  latency: 1
+         name: :webpack,
+         command: build? ?
+         "npm run build" :
+         "npm start",
+         source: ".tmp/dist",
+         latency: 1
 
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'

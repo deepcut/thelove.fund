@@ -4,11 +4,12 @@
 // // @import sizes
 @import 'colors';
 @import 'foundation-settings';
-@import 'foundation';
+@import '~foundation-sites/scss/foundation';
 
 @include foundation-everything;
 
 @import 'mixins';
+@import 'resets';
 @import 'components/all';
 @import 'screens/all';
 
@@ -17,6 +18,8 @@
   height: 5rem;
   width: 5rem;
   position: absolute;
-  top: 3%;
+  top: 1%;
   left: 3%;
 }
+
+#mc_embed_signup{background:#fff; clear:left;}
