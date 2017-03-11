@@ -9,7 +9,7 @@
     color: white
     .headline
       text-transform: uppercase
-      text-shadow: -4px 4px 8px black
+      text-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3)
     .sub-headline
       font-size: 1.5rem
       +breakpoint(small only)
@@ -29,13 +29,27 @@
     .org-cards
       margin-bottom: 3rem
     .org-card
-      overflow: scroll
+      overflow-y: scroll
+      overflow-x: hidden
+  .contribute-other.link
+    font-size: 0.85rem
+  .faqs-panel
+    background: $light-gray
+    padding-top: 7rem
+    padding-bottom: 8rem
+    .headline
+      margin-top: 0
+    .faq-items
+      list-style: none
+    .faq-item
+      margin-bottom: 1rem
+    .faq-question
+      font-weight: bold
 
 footer.footer
-  background: $light-gray
-  color: $gray
-  margin-top: 6rem
-  padding-top: 8rem
-  padding-bottom: 8rem
+  // background: $light-gray
+  // color: $gray
+  padding-top: 7rem
+  padding-bottom: 6rem
   .footer-content
     margin: 0

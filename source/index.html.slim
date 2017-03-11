@@ -39,6 +39,18 @@ header.hero
   .medium-8.small-11.small-centered.columns
     = partial 'components/donation_box'
 
-footer.footer.row.expanded.center-elements
+.faqs-panel.panel.row.expanded
+  .row
+    .medium-8.small-11.small-centered.columns
+      h3.headline = data.index.faqs_panel.headline
+    ul.faq-items.medium-8.small-11.small-centered.columns
+      - data.index.faqs_panel.faq_items.each do |item|
+        li.faq-item
+          h5.faq-question = item.question
+          .faq-answer = item.answer
+
+footer.footer.row.center-elements
   .small-6.small-centered.columns
-    .footer-content Powered by <3
+    .footer-content
+      a.typeform-share.link href="https://fei3.typeform.com/to/ySyNFg" data-mode="1" target="_blank" Contact Us
+

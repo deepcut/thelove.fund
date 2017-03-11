@@ -24,3 +24,14 @@ donation_box:
   title: 'Convinced? Make a pledge to donate monthly'
   caveat: "It's just a pledge for now, we'll let you know once we launch and ready to accept donations."
   cta: Pledge
+faqs_panel:
+  headline: Frequently Asked Questions
+  faq_items:
+  - question: Who is behind this?
+    answer: We’re a group of technology professionals who want to do something useful with our skills. At our day jobs, we do software engineering, design, and community organizing.
+  - question: How does my money go to the non-profits?
+    answer: We use industry standard charity information and donation platforms like <a href='http://www.guidestar.org/' target='_blank'>GuideStar</a> and <a href='https://www.charitynavigator.org/' target='_blank'>Charity Navigator</a> – the same technologies that powers AmazonSmile.
+  - question: Are you guys making money from this?
+    answer: Nope. We're doing this as a passion project and there is absolutely no desire to turn a profit.
+  - question: Are there other fees?
+    answer: There may have to be fees for things like payment processor and server cost – we're still assessing our options. The goal is to get everything to the charities as secure and as fast possible.
